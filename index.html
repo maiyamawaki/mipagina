@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/sytle/index.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;1,200&display=swap" rel="stylesheet">
+	<title>Test</title>
+</head>
+<body>
+	<header>
+		<div>
+			<h1><a href="/">Test</a></h1>
+		</div>
+		<div>
+			<ul>
+				<li><a href="/">ホーム</a></li>
+				<li><a href="/test.html">Testについて</a></li>
+				<li><a href="/contact.html">お問い合わせ</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="main">
+		<div class="btns">
+			<button class="left">←</button>
+			<button class="right">→</button>
+		</div>	
+	</div>
+
+	<div class="places-list">
+		<h1>お勧めのエリア</h1>
+		<div class="place-container">
+			<div class="place-detail">
+					<h2>東京</h2>
+					<div class="detail-container"> 
+						<img src="img/tokio.jpeg">
+						<div>
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ...</p>
+							<a href="/place1.html">詳細→</a>
+						</div>
+					</div>
+			</div>
+			<div class="place-detail">
+				<h2>大阪</h2>
+				<div class="detail-container">
+					<img src="img/osaka.JPG">
+					<div>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ...</p>
+						<a href="/place2.html">詳細→</a>
+					</div>
+				</div>
+			</div>
+			<div class="place-detail">
+				<h2>京都</h2>
+				<div class="detail-container">
+					<img src="img/img4.jpg">
+					<div>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ...</p>
+						<a href="place3.html">詳細→</a>
+					</div>
+				</div>
+			</div>
+			<div class="place-detail">
+				<h2>沖縄</h2>
+				<div class="detail-container">
+					<img src="img/okinawa.jpeg">
+					<div>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ...</p>
+						<a href="place4.html">詳細→</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-about">
+		<h2>Testについて</h2>
+		<br>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quasi et incidunt reiciendis dolor voluptatum reprehenderit...</p>
+		<br>
+		<a href="test.html">詳細→</a>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="contact">
+		<h2>お問い合わせ</h2>
+		<br>
+		<form action="/contact.html" /*method="POST"*/>
+		<label for="title">件名</label>
+		<br>
+		<input type="text" name="title">
+		<br>
+		<label for="context">内容</label>
+		<br>
+		<textarea name="context"></textarea>
+		<br>
+		<label for="email">Eメールアドレス</label>
+		<br>
+		<input type="email" name="email">
+		<br>
+		<br>
+		<button type="submit">送信</button>
+		</form>
+	</div>
+
+	<footer>
+		<p>&copy;example</p>
+	</footer>
+	<script src="js/index.js"></script>
+</body>
+</html>

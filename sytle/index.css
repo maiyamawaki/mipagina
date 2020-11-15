@@ -1,0 +1,384 @@
+*{
+	margin: 0;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	color:#333;
+	font-family: 'Roboto Mono', monospace;
+}
+
+/*global*/
+button{
+	border:none;
+	padding: 12px 3px;
+	border-radius: 10px;
+	background-color: rgb(120, 185, 211);
+	color: white;
+	font-size: 16px;
+}
+
+button:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+	font-size: 14px;
+}
+
+a:hover{
+	border-bottom: 1px solid #ddd;
+	font-size:22px;
+}
+
+.mapBox{
+	padding: 20px;
+	text-align: center;
+}
+
+#map{
+	margin: 0 auto;
+}
+
+/*header*/
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 15px;
+}
+
+header h1{
+	line-height: 57px;
+}
+
+header h1 a{
+	font-size: 28px;
+}
+
+header h1 a:hover{
+	border-bottom: none;
+	font-size:28px;
+}
+
+header a{
+	line-height: 57px;
+	font-size: 12px;
+}
+
+header ul{
+	list-style: none;
+}
+
+header ul li{
+	display: inline;
+	line-height: 30px;
+}
+
+.btns{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 20px;
+}
+.left,
+.right{
+	margin-top: 260px;
+}
+
+@media (min-width: 768px) {
+	header a{
+		font-size: 16	px;
+	}
+}
+
+/*main*/
+.main{
+	background-image: url(/img/img1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+
+.main button{
+	background-color: #ddd;
+	opacity: 0.6;
+	color:#333;
+}
+
+.search{
+	display: inline-block;
+	margin: 320px 10%;
+	width: 80%;
+}
+
+.main-about{
+	margin: 10px 30px;
+}
+
+.main-about a{
+	display: block;
+	text-align: right;
+}
+
+.main-about a:hover{
+	border:none;
+}
+
+.main-about h2{
+	border-bottom:1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+	.main{
+		height: 700px;
+	}
+
+	.main-about{
+		margin: 10px 150px;
+	}
+}
+
+
+
+/*places*/
+.places-list{
+	padding: 50px 20px;
+	text-align: center;
+}
+
+.places-list h1{
+	margin: 20px 0;
+}
+
+.place-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 40px 0;
+}
+
+.place-detail{
+	width: 100%;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	margin : 10px 0;
+	padding: 10px;
+}
+
+.place-detail:hover{
+	transform:scale(1.1,1.1);
+	transition-duration: 0.3s;
+}
+
+.detail-container{
+	display: flex;
+}
+
+.place-detail h2{
+	border-bottom: 1px solid #ddd;
+	margin: 5px 0;
+}
+
+.place-detail img{
+	height: 100%;
+	width: 100%;
+	margin: 20px 0;
+}
+.place-detail p{
+	width: 60%;
+	margin: 10px auto;
+	text-align: left;
+}
+
+.place-detail a:hover{
+	font-size: 14px;
+}
+
+@media (min-width:768px) {
+		.place-detail{
+			width: 45%;
+		}
+
+		.place-detail{
+			position: relative;
+		}
+
+		.place-detail a{
+			position: absolute;
+			top:200px;
+			left:300px;
+		}
+}
+
+@media (min-width: 1200px) {
+	.place-detail a{
+		top:250px;
+		left:500px;
+	}
+}
+
+/*footer*/
+footer{
+	text-align: center;
+	height: 50px;
+	margin-top: 60px;
+}
+
+footer p{
+	font-size: 16px;
+}
+
+/*place1*/
+#map{
+	width: 300px;
+	height: 270px;
+}
+
+#coordenadas{
+	display: none;
+}
+
+.departments{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.department{
+	width: 100%;
+	padding:20px 30px;
+	text-align: center;
+	border-radius: 10px;
+	border: 1px solid #eee;
+	margin: 10px 60px;
+	height: 60%;
+}
+
+.department h2{
+	margin: 10px;
+}
+
+.department img{
+	width:100%;
+	height: 30%;
+}
+
+.department button{
+	margin-top: 10px;
+	padding: 12px 10px;
+}
+
+@media (min-width: 768px) {
+	#map{
+		width: 700px;
+		height: 500px;
+	}
+
+	.department{
+		width: 28%;
+		margin: 10px 15px;
+	}
+
+	.department img{
+		width:100%;
+		height: 300px;
+	}
+}
+
+/*about*/
+.about{
+	margin: 50px 60px;
+}
+
+.about h2{
+	border-bottom:1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+	.about{
+		margin: 150px 100px;
+	}
+}
+
+/*Conact*/
+.contact{
+	width: 60%;
+	margin: 30px auto;
+}
+
+.contact h2{
+	text-align: center;
+}
+
+.contact input{
+	width: 100%;
+	border: none;
+	background-color: #eee;
+	padding: 10px 0;
+	border-radius: 10px;
+}
+
+.contact textarea{
+	width: 100%;
+	border:none;
+	background-color: #eee;
+	border-radius: 10px;
+	padding: 15px 0;
+}
+
+.contact button{
+	width: 100%;
+}
+
+.contact button:hover{
+	opacity: 0.7;
+}
+
+/*modal*/
+.hidden{
+	display: none;
+}
+
+.modalForm{
+	height: 570px;
+	padding: 40px 0;
+}
+
+.modalForm a{
+	text-align: right;
+	display: block;
+}
+
+.modalForm a:hover{
+	font-size: 14px;
+	border: none;
+}
+
+
+.active{
+	display: block;
+	position: absolute;
+	top:50%;
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+	z-index: 100;
+	left: 10%;
+	width: 80%;
+}
+
+.bg-black{
+	background-color: #333;
+}
+
+
+@media (min-width:768px) {
+	.active{
+		width: 50%;
+		left: 25%;
+		padding: 30px;
+	}
+
+	.modalForm{
+		height: 590px;
+	}
+}

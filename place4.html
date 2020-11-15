@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;1,200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/sytle/index.css">
+	<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+	<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
+	<title>Test</title>
+</head>
+<body>
+	<header>
+		<div>
+			<h1><a href="/">Test</a></h1>
+		</div>
+		<div>
+			<ul>
+				<li><a href="/">ホーム</a></li>
+				<li><a href="/test.html">Testについて</a></li>
+				<li><a href="/contact.html">お問い合わせ</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="mapBox">
+		<h1>沖縄</h1>
+		<div id='map'></div>
+		<pre id='coordenadas'></pre>
+	</div>
+	
+	<div class="hidden contact modalForm">
+		<h2>お問い合わせ</h2>
+		<br>
+		<form action="/place4.html">
+		<label for="depa">マンション名</label>
+		<br>
+		<input type="text" name="depa">
+		<br>
+		<br>
+		<label for="context">内容</label>
+		<br>
+		<textarea name="context"></textarea>
+		<br>
+		<br>
+		<label for="date">ご希望利用開始日</label>
+		<br>
+		<input type="date" name="date">
+		<br>
+		<br>
+		<label for="date">ご希望利用終了日</label>
+		<input type="date" name="date">
+		<br>
+		<br>
+		<br>
+		<button type="submit">送信</button>
+		<br>
+		<br>
+		<a href="place4.html">Close</a>
+		</form>
+	</div>
+
+	<div class="departments">
+		<div class="department">
+			<h2>マンション名</h2>
+			<img src="img/okinawa1.jpeg">
+			<br>
+			<br>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, ut laudantium at aliquid necessitatibus similique!</p>
+			<br>
+			<p>住所 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure at laboriosam</p>
+			<br>
+			<button class="modalActive" type="submit">お問い合わせ</button>
+		</div>
+		<div class="department">
+			<h2>マンション名</h2>
+			<img src="img/okinawa2.jpeg">
+			<br>
+			<br>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, ut laudantium at aliquid necessitatibus similique!</p>
+			<br>
+			<p>住所 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure at laboriosam</p>
+			<br>
+			<button class="modalActive" type="submit">お問い合わせ</button>
+		</div>
+		<div class="department">
+			<h2>マンション名</h2>
+			<img src="img/okinawa3.jpeg">
+			<br>
+			<br>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, ut laudantium at aliquid necessitatibus similique!</p>
+			<br>
+			<p>住所 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure at laboriosam</p>
+			<br>
+			<button class="modalActive" type="submit">お問い合わせ</button>
+		</div>
+		<div class="department">
+			<h2>マンション名</h2>
+			<img src="img/okinawa4.jpeg">
+			<br>
+			<br>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, ut laudantium at aliquid necessitatibus similique!</p>
+			<br>
+			<p>住所 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure at laboriosam</p>
+			<br>
+			<button class="modalActive" type="submit">お問い合わせ</button>
+		</div>
+		<div class="department">
+			<h2>マンション名</h2>
+			<img src="img/okinawa5.jpeg">
+			<br>
+			<br>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, ut laudantium at aliquid necessitatibus similique!</p>
+			<br>
+			<p>住所 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure at laboriosam</p>
+			<br>
+			<button class="modalActive" type="submit">お問い合わせ</button>
+		</div>
+		<div class="department">
+			<h2>マンション名</h2>
+			<img src="img/okinawa6.jpeg">
+			<br>
+			<br>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, ut laudantium at aliquid necessitatibus similique!</p>
+			<br>
+			<p>住所 : Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure at laboriosam</p>
+			<br>
+			<button class="modalActive" type="submit">お問い合わせ</button>
+		</div>
+	</div>
+
+	<footer>
+		<p>&copy;example</p>
+	</footer>
+
+	<script src="/js/mapBox4.js"></script>
+	<script src="/js/modal.js"></script>
+</body>
+</html>
